@@ -63,6 +63,9 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\OtherAccount\ConfirmEmail.cshtml" />
+    <Content Include="Views\OtherAccount\DisplayEmail.cshtml" />
+    <Content Include="Views\OtherAccount\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

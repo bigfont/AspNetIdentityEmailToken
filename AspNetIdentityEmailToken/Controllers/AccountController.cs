@@ -9,6 +9,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.Owin.Security.DataProtection;
 
 namespace IdentitySample.Controllers
 {
@@ -21,11 +22,11 @@ namespace IdentitySample.Controllers
 
         public AccountController(ApplicationUserManager userManager)
         {
-            UserManager = userManager;
+            userManager = userManager;
         }
 
         private ApplicationUserManager _userManager;
-        public ApplicationUserManager UserManager
+        public ApplicationUserManager userManager
         {
             get
             {
@@ -54,13 +55,16 @@ namespace IdentitySample.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                var result = await UserManager.CreateAsync(user, model.Password);
+                var user = new User { UserName = model.Email, Email = model.Email };
+                var result = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    var code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                    var provider = new DpapiDataProtectionProvider("WebApp2015");
+                    userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(provider.Create(user.Id));
+                    var code = userManager.GenerateEmailConfirmationToken(user.Id);
                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
 
+                    // for the demo, don't send the email
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking this link: <a href=\"" + callbackUrl + "\">link</a>");
 
                     ViewBag.Link = callbackUrl;
@@ -82,7 +86,7 @@ namespace IdentitySample.Controllers
             {
                 return View("Error");
             }
-            var result = await UserManager.ConfirmEmailAsync(userId, code);
+            var result = await userManager.ConfirmEmailAsync(userId, code);
             return View(result.Succeeded ? "ConfirmEmail" : "Error");
         }
         
