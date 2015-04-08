@@ -1,14 +1,8 @@
-﻿using System.Globalization;
+﻿using System.Web;
+using System.Web.Mvc;
 using IdentitySample.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using System;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Mvc;
 using Microsoft.Owin.Security.DataProtection;
 
 namespace IdentitySample.Controllers
@@ -18,11 +12,6 @@ namespace IdentitySample.Controllers
     {
         public AccountController()
         {
-        }
-
-        public AccountController(ApplicationUserManager userManager)
-        {
-            userManager = userManager;
         }
 
         private ApplicationUserManager _userManager;
@@ -51,16 +40,18 @@ namespace IdentitySample.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
+        public ActionResult Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
                 var user = new User { UserName = model.Email, Email = model.Email };
-                var result = await userManager.CreateAsync(user, model.Password);
+                var result = userManager.Create(user, model.Password);
                 if (result.Succeeded)
                 {
+                    // you could also set the provider in IdentityConfig.cs
                     var provider = new DpapiDataProtectionProvider("WebApp2015");
                     userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(provider.Create(user.Id));
+
                     var code = userManager.GenerateEmailConfirmationToken(user.Id);
                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
 
@@ -80,13 +71,13 @@ namespace IdentitySample.Controllers
         //
         // GET: /Account/ConfirmEmail
         [AllowAnonymous]
-        public async Task<ActionResult> ConfirmEmail(string userId, string code)
+        public ActionResult ConfirmEmail(string userId, string code)
         {
             if (userId == null || code == null)
             {
                 return View("Error");
             }
-            var result = await userManager.ConfirmEmailAsync(userId, code);
+            var result = userManager.ConfirmEmail(userId, code);
             return View(result.Succeeded ? "ConfirmEmail" : "Error");
         }
         
