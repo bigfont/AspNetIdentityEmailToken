@@ -7,7 +7,6 @@ using Microsoft.Owin.Security.DataProtection;
 
 namespace IdentitySample.Controllers
 {
-    [Authorize]
     public class AccountController : Controller
     {
         public AccountController()
@@ -27,15 +26,12 @@ namespace IdentitySample.Controllers
             }
         }
 
-        [AllowAnonymous]
         public ActionResult Register()
         {
             return View();
         }
 
         [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
         public ActionResult Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
@@ -46,7 +42,7 @@ namespace IdentitySample.Controllers
                 {
                     // you could also set the provider in IdentityConfig.cs
                     var provider = new DpapiDataProtectionProvider("WebApp2015");
-                    userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(provider.Create(user.Id));
+                    userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(provider.Create("UserToken"));
 
                     var code = userManager.GenerateEmailConfirmationToken(user.Id);
                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
@@ -64,13 +60,17 @@ namespace IdentitySample.Controllers
             return View(model);
         }
 
-        [AllowAnonymous]
         public ActionResult ConfirmEmail(string userId, string code)
         {
             if (userId == null || code == null)
             {
                 return View("Error");
             }
+
+            // you could also set the provider in IdentityConfig.cs
+            var provider = new DpapiDataProtectionProvider("WebApp2015");
+            userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(provider.Create("UserToken"));
+
             var result = userManager.ConfirmEmail(userId, code);
             return View(result.Succeeded ? "ConfirmEmail" : "Error");
         }

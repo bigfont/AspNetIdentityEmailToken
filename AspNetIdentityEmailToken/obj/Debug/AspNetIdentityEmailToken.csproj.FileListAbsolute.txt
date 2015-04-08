@@ -88,4 +88,3 @@ C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailT
 C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\System.Web.WebPages.Razor.xml
 C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\obj\Debug\AspNetIdentityEmailToken.dll
 C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\obj\Debug\AspNetIdentityEmailToken.pdb
-C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\obj\Debug\AspNetIdentityEmailToken.csprojResolveAssemblyReference.cache
