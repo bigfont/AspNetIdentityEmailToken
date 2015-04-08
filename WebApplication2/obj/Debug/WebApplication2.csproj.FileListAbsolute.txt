@@ -10,11 +10,7 @@ c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebA
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Host.SystemWeb.dll
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Cookies.dll
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.dll
-c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Facebook.dll
-c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Google.dll
-c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.OAuth.dll
-c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Twitter.dll
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Web.Infrastructure.dll
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Newtonsoft.Json.dll
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Owin.dll
@@ -36,11 +32,7 @@ c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebA
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Host.SystemWeb.xml
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.xml
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Cookies.xml
-c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Facebook.xml
-c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Google.xml
-c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.OAuth.xml
-c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.Twitter.xml
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\Newtonsoft.Json.xml
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\System.Web.Helpers.xml
 c:\users\shaun.luttin\documents\visual studio 2012\Projects\WebApplication2\WebApplication2\bin\System.Web.Mvc.xml
