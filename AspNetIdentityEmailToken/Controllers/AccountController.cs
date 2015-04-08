@@ -47,10 +47,14 @@ namespace IdentitySample.Controllers
                     var code = userManager.GenerateEmailConfirmationToken(user.Id);
                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
 
+                    var callbackUrlFails = Url.Action("ConfirmEmailFails", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+
                     // for the demo, don't send the email
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking this link: <a href=\"" + callbackUrl + "\">link</a>");
 
                     ViewBag.Link = callbackUrl;
+                    ViewBag.LinkFails = callbackUrlFails;
+
                     return View("DisplayEmail");
                 }
                 AddErrors(result);
@@ -70,6 +74,21 @@ namespace IdentitySample.Controllers
             // you could also set the provider in IdentityConfig.cs
             var provider = new DpapiDataProtectionProvider("WebApp2015");
             userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(provider.Create("UserToken"));
+
+            var result = userManager.ConfirmEmail(userId, code);
+            return View(result.Succeeded ? "ConfirmEmail" : "Error");
+        }
+
+        public ActionResult ConfirmEmailFails(string userId, string code)
+        {
+            if (userId == null || code == null)
+            {
+                return View("Error");
+            }
+
+            // you could also set the provider in IdentityConfig.cs
+            var provider = new DpapiDataProtectionProvider("WebApp2015");
+            userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(provider.Create("X"));
 
             var result = userManager.ConfirmEmail(userId, code);
             return View(result.Succeeded ? "ConfirmEmail" : "Error");
