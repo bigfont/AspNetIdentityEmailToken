@@ -1,0 +1,16 @@
+﻿Install-Package Microsoft.AspNet.Mvc                                                                                                                                                                                                     
+Install-Package Microsoft.AspNet.Mvc                                                                                   
+Install-Package Microsoft.AspNet.Mvc                                                                                   
+Install-Package Microsoft.AspNet.Identity.Core                                                                            
+Install-Package EntityFramework                                                                                  
+Install-Package Microsoft.AspNet.Identity.EntityFramework                                           
+Install-Package Microsoft.Owin                                                                                 
+Install-Package Microsoft.AspNet.Web.Optimization                                                                                                                  
+Install-Package Microsoft.AspNet.Identity.Owin
+Install-Package Microsoft.Owin.Host.SystemWeb
+
+Manually Reference
+
+* System
+* System.Web
+* Microsoft.CSharp
