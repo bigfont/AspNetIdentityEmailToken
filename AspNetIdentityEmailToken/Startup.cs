@@ -1,5 +1,4 @@
-﻿using Microsoft.Owin.Security.DataProtection;
-using Owin;
+﻿using Owin;
 
 namespace IdentitySample
 {
