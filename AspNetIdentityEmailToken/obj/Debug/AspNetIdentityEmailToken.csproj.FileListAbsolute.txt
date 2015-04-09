@@ -154,3 +154,25 @@ C:\Users\BigFont\Documents\GitHub\AspNetIdentityEmailToken\AspNetIdentityEmailTo
 C:\Users\BigFont\Documents\GitHub\AspNetIdentityEmailToken\AspNetIdentityEmailToken\obj\Debug\AspNetIdentityEmailToken.csprojResolveAssemblyReference.cache
 C:\Users\BigFont\Documents\GitHub\AspNetIdentityEmailToken\AspNetIdentityEmailToken\obj\Debug\AspNetIdentityEmailToken.dll
 C:\Users\BigFont\Documents\GitHub\AspNetIdentityEmailToken\AspNetIdentityEmailToken\obj\Debug\AspNetIdentityEmailToken.pdb
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\x86\sqlcese40.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\x86\sqlceqp40.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\x86\sqlceme40.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\x86\sqlceer40EN.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\x86\sqlcecompact40.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\x86\sqlceca40.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\amd64\sqlcese40.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\amd64\sqlceqp40.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\amd64\sqlceme40.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\amd64\sqlceer40EN.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\amd64\sqlcecompact40.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\amd64\sqlceca40.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\System.Data.SqlServerCe.dll
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\shaun.luttin\Documents\Visual Studio 2012\Projects\AspNetIdentityEmailToken\AspNetIdentityEmailToken\obj\Debug\AspNetIdentityEmailToken.csprojResolveAssemblyReference.cache
