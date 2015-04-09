@@ -62,12 +62,6 @@
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
     <None Include="Web.config.bak">
       <SubType>Designer</SubType>
     </None>
