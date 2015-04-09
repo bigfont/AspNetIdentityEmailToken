@@ -8,6 +8,8 @@ Install-Package Microsoft.Owin
 Install-Package Microsoft.AspNet.Web.Optimization                                                                                                                  
 Install-Package Microsoft.AspNet.Identity.Owin
 Install-Package Microsoft.Owin.Host.SystemWeb
+Install-Package SqlServerCompact
+Install-Package EntityFramework.SqlServerCompact 
 
 Manually Reference
 
