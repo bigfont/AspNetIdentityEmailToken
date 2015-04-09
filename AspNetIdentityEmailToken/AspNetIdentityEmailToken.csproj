@@ -62,9 +62,6 @@
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web.config.bak">
-      <SubType>Designer</SubType>
-    </None>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\DisplayEmail.cshtml" />
@@ -88,12 +85,6 @@
   <ItemGroup>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <None Include="Web.config.Debug.bak">
-      <DependentUpon>Web.config.bak</DependentUpon>
-    </None>
-    <None Include="Web.config.Release.bak">
-      <DependentUpon>Web.config.bak</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime">
