@@ -40,7 +40,6 @@ namespace IdentitySample.Controllers
                 var result = userManager.Create(user, model.Password);
                 if (result.Succeeded)
                 {
-                    // you could also set the provider in IdentityConfig.cs
                     userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(Startup.DataProtectionProvider.Create("UserToken"));
 
                     var code = userManager.GenerateEmailConfirmationToken(user.Id);
@@ -70,7 +69,6 @@ namespace IdentitySample.Controllers
                 return View("Error");
             }
 
-            // you could also set the provider in IdentityConfig.cs
             userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(Startup.DataProtectionProvider.Create("UserToken"));
 
             var result = userManager.ConfirmEmail(userId, code);
@@ -84,9 +82,7 @@ namespace IdentitySample.Controllers
                 return View("Error");
             }
 
-            // you could also set the provider in IdentityConfig.cs
-            var provider = new DpapiDataProtectionProvider("WebApp2015");
-            userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(provider.Create("X"));
+            userManager.UserTokenProvider = new DataProtectorTokenProvider<User>(Startup.DataProtectionProvider.Create("X"));
 
             var result = userManager.ConfirmEmail(userId, code);
             return View(result.Succeeded ? "ConfirmEmail" : "Error");
